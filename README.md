@@ -45,6 +45,8 @@ Instead of creating a script to use ``ToxEnvMatcher``, the _tox\_with\_conda.py_
 
     python tox_with_conda.py E:\Anaconda3\envs 27 34 35 36 37
     
+__Note:__ if installed with pip, instead of ``python tox_with_conda.py ...`` use ``python -m tox_with_conda ...``.
+    
 Environment prefix (defaults to _py_) can be overridden with ``-p``/``--env_prefix`` options:
 
     python tox_with_conda.py E:\Anaconda3\envs 27 34 35 36 37 -p Python
