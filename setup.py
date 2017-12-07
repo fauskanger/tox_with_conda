@@ -2,8 +2,8 @@ from setuptools import setup
 
 setup(
     name='tox_with_conda',
-    version='1.0.2',
-    packages=[''],
+    version='1.0.3',
+    packages=[],
     py_modules=['tox_with_conda'],
     url='https://github.com/fauskanger/tox_with_conda',
     license='MIT',
