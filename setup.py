@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='tox_with_conda',
-    version='1.0.1',
+    version='1.0.2',
     packages=[''],
     py_modules=['tox_with_conda'],
     url='https://github.com/fauskanger/tox_with_conda',
