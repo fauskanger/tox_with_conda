@@ -11,6 +11,8 @@
 # From command line:
 # python tox_with_conda.py E:\Anaconda3\envs 27 34 35 36 37
 #
+from __future__ import print_function, absolute_import
+
 from subprocess import run
 from os.path import join
 
