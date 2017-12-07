@@ -46,19 +46,31 @@ class ToxEnvMatcher:
         for version in '27,34,35,36'.split(','):
             tem.make(version)
 
-    The class is utilized through ``argsparse`` so it can also be used from cmd.exe.
-
-    Examples of use of th of using ``ToxEnvMatcher`` from cmd.exe:
-
-    .. code-block:: none
-
-        E:\dev> tox_with_conda.py E:\Anaconda3\envs 27 34 35 36 37
-
-    It's possible to use the ``-b``/``--base`` option to override the default base location (``C:\Python``):
+    The module can also be used from cmd.exe.
+    Instead of creating a script to use ``ToxEnvMatcher``,
+    the *tox_with_conda.py*-script can be called with arguments:
 
     .. code-block:: none
 
-        E:\dev> tox_with_conda.py E:\Anaconda3\envs 27 34 35 36 37 --base D:\Python
+        python tox_with_conda.py E:\Anaconda3\envs 27 34 35 36 37
+
+    .. note:: If installed with pip/conda, then instead of
+              ``python tox_with_conda.py ...`` use ``python -m tox_with_conda ...``
+
+    Environment name prefix (defaults to *py*) can be overridden with the ``-p``/``--env_prefix`` options:
+
+    .. code-block:: none
+
+        python tox_with_conda.py E:\Anaconda3\envs 27 34 35 36 37 -p Python
+
+    This will create new environments in E:\Anaconda3\envs\PythonXY instead of E:\Anaconda3\envs\pyXY
+
+    If, for some reason you need to,
+    it's possible to use the ``-b``/``--base`` option to override the default base location (``C:\Python``):
+
+    .. code-block:: none
+
+        python tox_with_conda.py E:\Anaconda3\envs 27 34 35 36 37 --base D:\Python
 
     :param str envs_dir: The path to where new conda environments will be created
     :param str default_base: The base of the 'default' location. Usually it's ``C:\Python``
