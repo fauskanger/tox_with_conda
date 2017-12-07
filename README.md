@@ -2,6 +2,8 @@
 
 Get from GitHub: ``git clone https://github.com/fauskanger/tox_with_conda.git``
 
+Install with pip: ``pip install tox_with_conda``
+
 # Tox with conda
 
 [tox][tox] is a Python framework for creating multiple environments, and then install your project and run tests in each of them to make the process of running tests across versions an easy task.
