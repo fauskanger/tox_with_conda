@@ -1,5 +1,6 @@
 [tox]: https://tox.readthedocs.io
 
+Get from GitHub: ``git clone https://github.com/fauskanger/tox_with_conda.git``
 
 # Tox with conda
 
