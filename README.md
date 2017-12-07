@@ -1,8 +1,11 @@
 [tox]: https://tox.readthedocs.io
+[ac]: https://anaconda.org/fauskanger/tox_with_conda
 
 Get from GitHub: ``git clone https://github.com/fauskanger/tox_with_conda.git``
 
 Install with pip: ``pip install tox_with_conda``
+
+Install with [conda][ac]: ``conda install -c fauskanger tox_with_conda ``
 
 <hr>
 
