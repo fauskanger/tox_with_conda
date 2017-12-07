@@ -4,6 +4,8 @@ Get from GitHub: ``git clone https://github.com/fauskanger/tox_with_conda.git``
 
 Install with pip: ``pip install tox_with_conda``
 
+<hr>
+
 # Tox with conda
 
 [tox][tox] is a Python framework for creating multiple environments, and then install your project and run tests in each of them to make the process of running tests across versions an easy task.
@@ -45,7 +47,7 @@ Instead of creating a script to use ``ToxEnvMatcher``, the _tox\_with\_conda.py_
 
     python tox_with_conda.py E:\Anaconda3\envs 27 34 35 36 37
     
-__Note:__ if installed with pip, instead of ``python tox_with_conda.py ...`` use ``python -m tox_with_conda ...``.
+__Note:__ if installed with pip, then instead of ``python tox_with_conda.py ...`` use ``python -m tox_with_conda ...``
     
 Environment prefix (defaults to _py_) can be overridden with ``-p``/``--env_prefix`` options:
 
