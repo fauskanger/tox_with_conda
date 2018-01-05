@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='tox_with_conda',
-    version='1.0.3',
+    version='1.0.6',
     packages=[],
     py_modules=['tox_with_conda'],
     url='https://github.com/fauskanger/tox_with_conda',
@@ -10,5 +10,6 @@ setup(
     author='Thomas Fauskanger',
     author_email='',
     description='Utility for making conda environments work with tox',
-    long_description='See example of use at https://github.com/fauskanger/tox_with_conda'
+    long_description='See example of use at https://github.com/fauskanger/tox_with_conda',
+    include_package_data=True,
 )

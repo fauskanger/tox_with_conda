@@ -124,7 +124,7 @@ class ToxEnvMatcher:
         return 'mklink /J {}{} {}'.format(self.default_base, version, env_dir).split(' ')
 
 
-if __name__ == '__main__':
+def make_args():
     import argparse
 
     parser = argparse.ArgumentParser(description="Will create conda environements in the <env_dir> for each version "
@@ -143,7 +143,12 @@ if __name__ == '__main__':
     parser.add_argument("-p", "--env_prefix", default=DEFAULT_ENV_PREFIX,
                         help="Prefix to add before the version in newly created environments. "
                              "Default: {}.".format(DEFAULT_ENV_PREFIX))
-    args = parser.parse_args()
+    return parser
+
+
+if __name__ == '__main__':
+
+    args = make_args().parse_args()
 
     print('env_dir: ', args.env_dir)
     print('env_prefix: ', args.env_prefix)
